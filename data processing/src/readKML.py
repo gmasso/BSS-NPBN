@@ -47,8 +47,6 @@ print(root.findall('Name'))
 #	resident.append(address_list)
 #        csvwriter.writerow(Test)
 #Test_data.close()
-=======
-import pandas as pd
 
 fileName = "../../data/velib.kml"
 fp = open(fileName, 'r');
@@ -79,7 +77,7 @@ while( s != ''):
             name_start = substring.index("name>") + 5;
             name_end = substring.index("</name>");
             station_id = int(substring[name_start:name_end])
-            print(station_id)
+#            print(station_id)
 
     except ValueError as e:
         print ("Unexpected error on line "+ str(i) + ":" + s + ", " + str(e))
